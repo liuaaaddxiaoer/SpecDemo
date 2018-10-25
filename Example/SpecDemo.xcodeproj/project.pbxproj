@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F588AD003AA7A9972E8E38A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0F588AD003AA7A9972E8E38A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		24CCEB324427AE58310B4562 /* Pods-SpecDemo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecDemo_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpecDemo_Tests/Pods-SpecDemo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		473FD0F99D72931A470EF2FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		473FD0F99D72931A470EF2FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5DF676A3FE95333C0DBC1C3B /* Pods_SpecDemo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecDemo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E73B20742532707159CE81D /* Pods-SpecDemo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecDemo_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpecDemo_Example/Pods-SpecDemo_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SpecDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEAA248C90347DD4151CD573 /* Pods-SpecDemo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecDemo_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpecDemo_Tests/Pods-SpecDemo_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CA4BE52EE48EE6DB0EED3456 /* Pods-SpecDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecDemo_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpecDemo_Example/Pods-SpecDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D0029D1E756FFD5CDA5DD9F8 /* SpecDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SpecDemo.podspec; path = ../SpecDemo.podspec; sourceTree = "<group>"; };
+		D0029D1E756FFD5CDA5DD9F8 /* SpecDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpecDemo.podspec; path = ../SpecDemo.podspec; sourceTree = "<group>"; };
 		E12F4BFFD41EF4FE0FD67903 /* Pods_SpecDemo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecDemo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -340,10 +340,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SpecDemo_Example/Pods-SpecDemo_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/SpecDemo/SpecDemo.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpecDemo.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +538,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpecDemo/SpecDemo-Prefix.pch";
 				INFOPLIST_FILE = "SpecDemo/SpecDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -551,6 +554,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpecDemo/SpecDemo-Prefix.pch";
 				INFOPLIST_FILE = "SpecDemo/SpecDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

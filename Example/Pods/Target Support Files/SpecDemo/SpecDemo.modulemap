@@ -1,0 +1,6 @@
+framework module SpecDemo {
+  umbrella header "SpecDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
